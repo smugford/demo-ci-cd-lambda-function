@@ -9,7 +9,7 @@ phases:
       - sam package
         --template-file template.yml
         --output-template-file package.yml
-        --s3-bucket demo-ci-cd-sam-bucket
+        --s3-bucket demo-ci-cd-sam-bucket-smugford
 artifacts:
   files:
     - package.yml
