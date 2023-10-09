@@ -6,7 +6,6 @@ phases:
   build:
     commands:
       - chmod +x gradlew
-        ./gradlew wrapper --gradle-version 7.6.3
       - ./gradlew clean buildZip
       - sam package
         --template-file template.yml
