@@ -5,6 +5,7 @@ phases:
       java: corretto17
   build:
     commands:
+      - chmod +x gradlew
       - ./gradlew clean buildZip
       - sam package
         --template-file template.yml
